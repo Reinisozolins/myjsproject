@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page for JS example</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow">
+            <div class="card-body">
+              <h2 class="card-title text-center mb-4">Login</h2>
+              <form id="userPsw">
+                <div class="mb-3">
+                  <label for="userName" class="form-label">Username</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="userName"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="userPW" class="form-label">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="userPW"
+                    required
+                  />
+                </div>
+
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow">
+            <div class="card-body">
+              <h2 class="card-title text-center mb-4">How it works</h2>
+              <p>There are JS script in background.</p>
+              <br />
+              <p>1) Every time input same password</p>
+              <p>2) In third time write username in reverse</p>
+              <p>
+                3) If failed than after 3-rd attempt you must refresh browser
+              </p>
+              <br />
+              <p>Example:</p>
+              <p>1-st time Username: user Password: 123</p>
+              <p>2-nd time Username: Lorem Ipsum dummy text Password: 123</p>
+              <p>3-rd time Username: resu Password: 123</p>
+
+              <p>
+                There isn't any rule for username or password lenght. So you can
+                try all three times add example "1" in username and in password
+                field.
+              </p>
+              <p>For more info check loginscript2.js</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script for login feature -->
+    <script src="js/loginscript2.js"></script>
+
+    <!-- Bootstrap 5 JS Bundle CDN (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
